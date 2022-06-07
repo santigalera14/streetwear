@@ -1,0 +1,239 @@
+/* reset */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* body set-up */
+
+.header{
+    background-color: rgba(216, 2, 251, 0.31);
+    height: 12vh;
+}
+
+.main{
+    background-color: black;
+    height: auto;
+    padding: 100px;
+}
+
+.footer{
+    background-color: rgba(216, 2, 251, 0.31);
+    height: 10vh;
+}
+
+/* header set-up */
+
+.logo{
+    display: inline-flex;  
+    color: white;
+    margin: 6px;
+    height: 10vh;
+    width: 10vh;
+}
+
+.menu{
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    height: 12vh;
+    flex-direction: row;
+    align-items: center;
+    top: 0px;
+    position: absolute;
+    left: 874px;
+}
+
+.menu li{
+    flex-wrap: wrap;
+    list-style: none;
+    border: white solid 3px;
+    background-color: black;
+    color: white;
+    padding: 5px;
+}
+
+.menu a{
+    color: white;
+    text-decoration: none;
+}
+
+.menu a:hover{
+    color: white;
+    font-weight: 600;
+}
+
+.menu li:hover{
+    background-color: rgb(220, 22, 22);
+}
+
+/* introducción en el index */
+
+.texto{
+    display: inline;
+    background-color: #cc1a1acc;
+    border: solid 2px white;
+    color: white;
+}
+
+.introduccion{
+    display: inline-block;
+    background-color: none;
+    color: white;
+    padding: 20px;
+}
+
+.imagen{
+    display: grid;
+    grid-template-columns: 200px 200px 300px;
+    grid-template-rows: 200px;
+    justify-content: space-evenly;
+    margin-right: 15px;
+}
+
+.imagenPantalon{
+    width: 100%;
+    height: 100%;
+}
+
+.imagenChica{
+    width: 100%;
+    height: 100%;
+}
+
+.camperasNike{
+    width: 100%;
+    height: 100%;
+}
+
+/* iconos footer */
+
+.iconos{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 4rem;
+    padding: 7px;
+}
+
+/* indumentaria set-up */
+
+.indumentaria{
+    display: inline-block;
+    position: absolute;
+    right: 560px;
+    top: 15%;
+    color: white;
+    border-bottom: solid;
+}
+
+.orderedList{
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    margin-top: -40px;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+    right: 337px;
+    flex-direction: row;
+    color: white;
+    gap: 2rem;
+}
+
+.verTodo{
+    display: grid;
+    grid-template-columns: 200px 200px 200px;
+    grid-template-rows: 150px 150px 1px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 5rem;
+    position: relative;
+    margin: 20px;
+    top: 15%;
+    padding: 10px;
+}
+
+/* accesorios set-up */
+
+.accesorios{
+    display: inline-block;
+    position: absolute;
+    right: 590px;
+    top: 15%;
+    color: white;
+    border-bottom: solid;
+}
+
+.orderedLista{
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    margin-top: -40px;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+    right: 305px;
+    flex-direction: row;
+    color: white;
+    gap: 2rem;
+}
+
+.vertodo{
+    display: grid;
+    grid-template-columns: 200px 200px 200px;
+    grid-template-rows: 150px 150px 1px;
+    flex-wrap: wrap;
+    gap: 5rem;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
+/* formulario envios/contacto */
+
+.formulario{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    color: white;
+}
+
+
+/* full responsive */
+
+@media all and (max-width: 768px) {
+    .header, .main, .footer{
+        grid-column: 1 / span 5;
+        grid-template-rows: repeat(5, 100px);
+    }
+    .indumentaria{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        left: 290px;
+        border-bottom: solid;
+    }
+    .orderedList{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        left: 300px;
+    }
+    .verTodo{
+        grid-template-columns: 150px 150px;
+        grid-template-rows: 150px 150px;
+        margin-top: 40%;
+    }
+}
+
+@media (max-width: 425px) {
+    .header, .main, .footer{
+        grid-column: 1 / span 9;
+        grid-template-rows: repeat(3, 100px);
+    }
+}
