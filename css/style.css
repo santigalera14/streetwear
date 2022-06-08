@@ -8,8 +8,8 @@
 /* body set-up */
 
 .header{
+    flex-wrap: wrap;
     background-color: rgba(216, 2, 251, 0.31);
-    height: 12vh;
 }
 
 .main{
@@ -26,11 +26,20 @@
 /* header set-up */
 
 .logo{
-    display: inline-flex;  
+    display: inline;
+    flex-wrap: wrap;  
     color: white;
     margin: 6px;
-    height: 10vh;
-    width: 10vh;
+    width: 27%;
+    height: 28%;
+}
+
+.top{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 20px;
 }
 
 .menu{
@@ -41,8 +50,6 @@
     flex-direction: row;
     align-items: center;
     top: 0px;
-    position: absolute;
-    left: 874px;
 }
 
 .menu li{
