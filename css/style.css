@@ -126,7 +126,7 @@
 
 /* indumentaria set-up */
 
-.titular{
+.titular {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -163,26 +163,25 @@
 
 /* accesorios set-up */
 
+.titular {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    color: white
+}
+
 .accesorios {
-    display: inline-block;
-    position: absolute;
-    right: 590px;
-    top: 15%;
-    color: white;
     border-bottom: solid;
 }
 
 .orderedLista {
     display: flex;
     flex-wrap: wrap;
-    position: absolute;
-    margin-top: -40px;
-    align-items: center;
-    justify-content: space-between;
     list-style: none;
     right: 305px;
     flex-direction: row;
-    color: white;
     gap: 2rem;
 }
 
@@ -190,11 +189,15 @@
     display: grid;
     grid-template-columns: 200px 200px 200px;
     grid-template-rows: 150px 150px 1px;
-    flex-wrap: wrap;
-    gap: 5rem;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
+    gap: 5rem;
+    position: relative;
     margin: 20px;
+    top: 15%;
+    padding: 10px;
+    ;
 }
 
 /* formulario envios/contacto */
@@ -257,15 +260,27 @@
         width: 290px;
     }
 
-    .titular{
+    /* Indumentaria */
+
+    .titular {
         display: grid;
         flex-wrap: wrap;
         justify-items: center;
     }
 
+    .verTodo {
+        width: 100px;
+    }
+
+    /* Accesorios */
+
+    .vertodo {
+        width: 100px;
+    }
+
     /* responsive footer */
 
-    .footer{
+    .footer {
         display: grid;
     }
 }
