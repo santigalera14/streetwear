@@ -285,7 +285,7 @@
     }
 }
 
-@media all and (min-width: 320px) (max-width: 425px) {
+@media all and (max-width: 425px) {
     .header {
         display: grid;
         grid-template-columns: 425px;
@@ -294,5 +294,13 @@
         display: block;
         flex-wrap: wrap;
         width: 150px;
+    }
+    .menu {
+        flex-wrap: wrap;
+    }
+    .main{
+        display: grid;
+        grid-template-columns: 200px 200px;
+        grid-template-rows: 200px 200px;
     }
 }
