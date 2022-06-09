@@ -1,40 +1,40 @@
 /* reset */
 
-*{
+* {
     margin: 0;
     padding: 0;
 }
 
 /* body set-up */
 
-.header{
+.header {
     flex-wrap: wrap;
     background-color: rgba(216, 2, 251, 0.31);
 }
 
-.main{
+.main {
     background-color: black;
     height: auto;
     padding: 100px;
 }
 
-.footer{
+.footer {
+    flex-wrap: wrap;
     background-color: rgba(216, 2, 251, 0.31);
-    height: 10vh;
 }
 
 /* header set-up */
 
-.logo{
+.logo {
     display: inline;
-    flex-wrap: wrap;  
+    flex-wrap: wrap;
     color: white;
     margin: 6px;
     width: 27%;
     height: 28%;
 }
 
-.top{
+.top {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -42,7 +42,7 @@
     margin-right: 20px;
 }
 
-.menu{
+.menu {
     display: flex;
     justify-content: flex-end;
     flex-wrap: wrap;
@@ -52,7 +52,7 @@
     top: 0px;
 }
 
-.menu li{
+.menu li {
     flex-wrap: wrap;
     list-style: none;
     border: white solid 3px;
@@ -61,37 +61,37 @@
     padding: 5px;
 }
 
-.menu a{
+.menu a {
     color: white;
     text-decoration: none;
 }
 
-.menu a:hover{
+.menu a:hover {
     color: white;
     font-weight: 600;
 }
 
-.menu li:hover{
+.menu li:hover {
     background-color: rgb(220, 22, 22);
 }
 
 /* introducción en el index */
 
-.texto{
+.texto {
     display: inline;
     background-color: #cc1a1acc;
     border: solid 2px white;
     color: white;
 }
 
-.introduccion{
+.introduccion {
     display: inline-block;
     background-color: none;
     color: white;
     padding: 20px;
 }
 
-.imagen{
+.imagen {
     display: grid;
     grid-template-columns: 200px 200px 300px;
     grid-template-rows: 200px;
@@ -99,24 +99,24 @@
     margin-right: 15px;
 }
 
-.imagenPantalon{
+.imagenPantalon {
     width: 100%;
     height: 100%;
 }
 
-.imagenChica{
+.imagenChica {
     width: 100%;
     height: 100%;
 }
 
-.camperasNike{
+.camperasNike {
     width: 100%;
     height: 100%;
 }
 
 /* iconos footer */
 
-.iconos{
+.iconos {
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -126,30 +126,28 @@
 
 /* indumentaria set-up */
 
-.indumentaria{
-    display: inline-block;
-    position: absolute;
-    right: 560px;
-    top: 15%;
-    color: white;
+.titular{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    color: white
+}
+
+.indumentaria {
     border-bottom: solid;
 }
 
-.orderedList{
+.orderedList {
     display: flex;
     flex-wrap: wrap;
-    position: absolute;
-    margin-top: -40px;
-    align-items: center;
-    justify-content: space-between;
-    list-style: none;
-    right: 337px;
     flex-direction: row;
-    color: white;
+    list-style: none;
     gap: 2rem;
 }
 
-.verTodo{
+.verTodo {
     display: grid;
     grid-template-columns: 200px 200px 200px;
     grid-template-rows: 150px 150px 1px;
@@ -165,7 +163,7 @@
 
 /* accesorios set-up */
 
-.accesorios{
+.accesorios {
     display: inline-block;
     position: absolute;
     right: 590px;
@@ -174,7 +172,7 @@
     border-bottom: solid;
 }
 
-.orderedLista{
+.orderedLista {
     display: flex;
     flex-wrap: wrap;
     position: absolute;
@@ -188,7 +186,7 @@
     gap: 2rem;
 }
 
-.vertodo{
+.vertodo {
     display: grid;
     grid-template-columns: 200px 200px 200px;
     grid-template-rows: 150px 150px 1px;
@@ -201,7 +199,7 @@
 
 /* formulario envios/contacto */
 
-.formulario{
+.formulario {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -213,33 +211,70 @@
 /* full responsive */
 
 @media all and (max-width: 768px) {
-    .header, .main, .footer{
-        grid-column: 1 / span 5;
-        grid-template-rows: repeat(5, 100px);
+
+    /* resposive header */
+    .header {
+        justify-content: space-around;
     }
-    .indumentaria{
-        display: flex;
+
+    .logo {
+        display: block;
         flex-wrap: wrap;
-        align-items: center;
-        left: 290px;
-        border-bottom: solid;
+        width: 150px;
     }
-    .orderedList{
-        display: flex;
+
+    .menu {
         flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-        left: 300px;
     }
-    .verTodo{
-        grid-template-columns: 150px 150px;
-        grid-template-rows: 150px 150px;
-        margin-top: 40%;
+
+    /* responsive main */
+    .main {
+        display: grid;
+        padding: 0px;
+    }
+
+    .texto {
+        display: block;
+        width: 230px;
+        text-align: center;
+    }
+
+    .imagen {
+        padding: 10px;
+        margin: 10px;
+        align-items: center;
+    }
+
+    .imagenPantalon {
+        width: 190px;
+    }
+
+    .imagenChica {
+        width: 190px;
+    }
+
+    .camperasNike {
+        width: 290px;
+    }
+
+    .titular{
+        display: grid;
+        flex-wrap: wrap;
+        justify-items: center;
+    }
+
+    /* responsive footer */
+
+    .footer{
+        display: grid;
     }
 }
 
 @media (max-width: 425px) {
-    .header, .main, .footer{
+
+    .header,
+    .main,
+    .footer {
         grid-column: 1 / span 9;
         grid-template-rows: repeat(3, 100px);
     }
