@@ -104,14 +104,29 @@
     height: 100%;
 }
 
+.imagenPantalon:hover{
+    transform: scale(1.2);
+    transition: 2s;
+}
+
 .imagenChica {
     width: 100%;
     height: 100%;
 }
 
+.imagenChica:hover{
+    transform: scale(1.2);
+    transition: 2s;
+}
+
 .camperasNike {
     width: 100%;
     height: 100%;
+}
+
+.camperasNike:hover{
+    transform: scale(1.2);
+    transition: 2s;
 }
 
 /* iconos footer */
@@ -122,6 +137,11 @@
     justify-content: space-around;
     gap: 4rem;
     padding: 7px;
+}
+
+.icons:hover {
+    transform: scale(1.3);
+    transition: 2s;
 }
 
 /* indumentaria set-up */
@@ -147,6 +167,12 @@
     gap: 2rem;
 }
 
+.list:hover {
+    transform: scale(1.07);
+    transition: 2s;
+    color: red;
+}
+
 .verTodo {
     display: grid;
     grid-template-columns: 200px 200px 200px;
@@ -159,6 +185,11 @@
     margin: 20px;
     top: 15%;
     padding: 10px;
+}
+
+.ropa:hover {
+    transform: scale(1.05);
+    transition: 2s;
 }
 
 /* accesorios set-up */
@@ -286,21 +317,12 @@
 }
 
 @media all and (max-width: 425px) {
-    .header {
-        display: grid;
-        grid-template-columns: 425px;
-    }
-    .logo {
-        display: block;
+    .top {
+        display: flex;
         flex-wrap: wrap;
-        width: 150px;
-    }
-    .menu {
-        flex-wrap: wrap;
-    }
-    .main{
-        display: grid;
-        grid-template-columns: 200px 200px;
-        grid-template-rows: 200px 200px;
+        margin-right: 20px;
+        flex-direction: column;
+        align-content: flex-end;
+        align-items: center;
     }
 }
