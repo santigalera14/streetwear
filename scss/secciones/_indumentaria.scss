@@ -1,0 +1,50 @@
+.main{
+        // */ indumentaria set-up */ 
+
+        .titular {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            align-content: center;
+            align-items: center;
+            color: white
+        }
+    
+        .indumentaria {
+            border-bottom: solid;
+        }
+    
+        .orderedList {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            list-style: none;
+            gap: 2rem;
+        }
+    
+        .list:hover {
+            transform: scale(1.07);
+            transition: 2s;
+            color: red;
+        }
+    
+        .verTodo {
+            display: grid;
+            grid-template-columns: 200px 200px 200px;
+            grid-template-rows: 150px 150px 1px;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 5rem;
+            position: relative;
+            margin: 20px;
+            top: 15%;
+            padding: 10px;
+        }
+    
+        .ropa:hover {
+            transform: scale(1.05);
+            transition: 2s;
+        }
+    
+}
