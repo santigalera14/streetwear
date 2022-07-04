@@ -1,0 +1,9 @@
+1. agregue SASS al proyecto
+.- SASS fue agregado de forma correcta, no hubo complicaciones en la realizacion del cambio de archivos css a sass
+2. se agrego SEO
+.- SEO fue agregado de forma correcta, no hubo cambios muy grandes, sin embrago, esta lo necesario para
+que la pagina tenga su reconocimiento dentro de la web.
+3. SEO
+.- todas las paginas fueron modificadas en su titulo, para que contengan el nombre de la pagina, debido a que 
+los nombres de algunas paginas eran extensos, como accesorios o indumentaria, se le abrevio el nombre a SW, y asi
+se ve en los demas html para que todos sean iguales.
