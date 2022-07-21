@@ -4,8 +4,8 @@
   margin: 0;
   padding: 0; }
 
-.main {
-  /* introducción en el index */ }
+ 
+  /* introducción en el index */ 
   .main .texto {
     display: inline;
     background-color: #cc1a1acc;
@@ -191,8 +191,8 @@
 .header .menu li:hover {
   background-color: #dc1616; }
 
-.footer {
-  /* iconos footer */ }
+
+  /* iconos footer */ 
   .footer .iconos {
     display: flex;
     align-items: center;
@@ -233,7 +233,7 @@
     grid-template-columns: 200px;
     gap: .3rem;
     align-items: center; }
-  }
+  
   .imagenPantalon {
     width: 190px; }
   .imagenChica {
@@ -273,4 +273,5 @@
   /* responsive footer */
   .footer {
     display: grid; } 
+  }
 
