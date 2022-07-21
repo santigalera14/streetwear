@@ -272,6 +272,9 @@
     width: 100px; }
   /* responsive footer */
   .footer {
-    display: grid; } 
+    display: grid;
+    width: auto;
+    height: auto;
+  } 
   }
 
